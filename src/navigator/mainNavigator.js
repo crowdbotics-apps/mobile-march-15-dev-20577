@@ -2,9 +2,8 @@ import React from "react"
 import { createDrawerNavigator } from "@react-navigation/drawer"
 import { NavigationContainer } from "@react-navigation/native"
 
-import SplashScreen from "../features/SplashScreen"
-import SplashScreenNavigator from '../features/Splash117937/navigator';
-import TermsAndConditions from '../features/TermsAndConditions217936/navigator';
+import SplashScreen from '../features/Splash117937/';
+import TermsAndConditions from '../features/TermsAndConditions217936/';
 import SideMenu from "./sideMenu"
 //@BlueprintImportInsertion
 
@@ -16,12 +15,10 @@ const AppNavigator = {
   //@BlueprintNavigationInsertion
   /** new navigators can be added here */
   SplashScreen: {
-    name: 'Splash Screen',
-    screen: SplashScreenNavigator
+    screen: SplashScreen.navigator
   },
   TermsAndConditions: {
-    name: 'Terms And Conditions',
-    screen: TermsAndConditions
+    screen: TermsAndConditions.navigator
   }
 }
 
